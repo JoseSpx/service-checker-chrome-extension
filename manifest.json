@@ -1,0 +1,33 @@
+{
+    "name": "Service Checker",
+    "version": "0.1.0",
+    "description": "Verify is services are working ok",
+    "permissions": ["storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/opensesame-logo.png",
+        "24": "assets/opensesame-logo.png",
+        "32": "assets/opensesame-logo.png"
+      },
+      "default_title": "opensesame sites",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+  }
+  

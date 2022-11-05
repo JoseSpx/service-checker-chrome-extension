@@ -1,0 +1,9 @@
+body {
+    background: none;
+}
+
+.container {
+    width: 280px;
+    color: #314d3e;
+    border-radius: 50px;
+}
